@@ -1,0 +1,190 @@
+{% extends "layout.html" %} {% set title = 'Cart' %} {% block content %}
+<section class="cart">
+    <div class="container">
+        <div class="col-12 col-lg-4">
+            <div class="title-page d-flex align-items-center">
+                <div class="title-main">
+                    <span>Home</span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+
+                <span class="main-tilte">Cart</span>
+            </div>
+        </div>
+        <div class="cart-title">
+            <div class="container">
+                <h2>Your cart</h2>
+            </div>
+        </div>
+        <div class="cart-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-7">
+                        <div class="cart-details">
+                            <div class="cart-product">
+                                <div class="cart-img">
+                                    <img
+                                        src="../assets/images/gradient-cart.jpg"
+                                        alt=""
+                                    />
+                                </div>
+                                <div
+                                    class="cart-details-main d-flex justify-content-between"
+                                >
+                                    <div class="cart-title-main d-flex flex-column">
+                                        <h6>Gradient Graphic T-shirt</h6>
+                                        <span class="size-cart"
+                                            >Sizes: <span>Large</span></span
+                                        >
+                                        <span class="color-cart"
+                                            >Color: <span>White</span></span
+                                        >
+                                        <span class="price-cart">$145</span>
+                                    </div>
+                                    <div
+                                        class="delete-count d-flex flex-column justify-content-between"
+                                    >
+                                        <a href="#" class="delete-cart"
+                                            ><img
+                                                src="../assets/images/delete.svg"
+                                                alt=""
+                                        /></a>
+                                        <div class="counter">
+                                            <button>
+                                                <i class="fa-solid fa-minus"></i>
+                                            </button>
+                                            <span>1</span>
+                                            <button>
+                                                <i class="fa-solid fa-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-product">
+                                <div class="cart-img">
+                                    <img
+                                        src="../assets/images/gradient-cart.jpg"
+                                        alt=""
+                                    />
+                                </div>
+                                <div
+                                    class="cart-details-main d-flex justify-content-between"
+                                >
+                                    <div class="cart-title-main d-flex flex-column">
+                                        <h6>Gradient Graphic T-shirt</h6>
+                                        <span class="size-cart"
+                                            >Sizes: <span>Large</span></span
+                                        >
+                                        <span class="color-cart"
+                                            >Color: <span>White</span></span
+                                        >
+                                        <span class="price-cart">$145</span>
+                                    </div>
+                                    <div
+                                        class="delete-count d-flex flex-column justify-content-between"
+                                    >
+                                        <a href="#" class="delete-cart"
+                                            ><img
+                                                src="../assets/images/delete.svg"
+                                                alt=""
+                                        /></a>
+                                        <div class="counter">
+                                            <button>
+                                                <i class="fa-solid fa-minus"></i>
+                                            </button>
+                                            <span>1</span>
+                                            <button>
+                                                <i class="fa-solid fa-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-product">
+                                <div class="cart-img">
+                                    <img
+                                        src="../assets/images/gradient-cart.jpg"
+                                        alt=""
+                                    />
+                                </div>
+                                <div
+                                    class="cart-details-main d-flex justify-content-between"
+                                >
+                                    <div class="cart-title-main d-flex flex-column">
+                                        <h6>Gradient Graphic T-shirt</h6>
+                                        <span class="size-cart"
+                                            >Sizes: <span>Large</span></span
+                                        >
+                                        <span class="color-cart"
+                                            >Color: <span>blue</span></span
+                                        >
+                                        <span class="price-cart">$240</span>
+                                    </div>
+                                    <div
+                                        class="delete-count d-flex flex-column justify-content-between"
+                                    >
+                                        <a href="#" class="delete-cart"
+                                            ><img
+                                                src="../assets/images/delete.svg"
+                                                alt=""
+                                        /></a>
+                                        <div class="counter">
+                                            <button>
+                                                <i class="fa-solid fa-minus"></i>
+                                               </button>
+                                            <span>1</span>
+                                            <button>
+                                                <i class="fa-solid fa-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="co-12 col-lg-5">
+                        <div class="order-summary">
+                            <div class="order">
+                                <h6>Order Summary</h6>
+                                <div class="all-total">
+                                    <div class="total d-flex justify-content-between align-items-center">
+                                        <span class="subtotal">Subtotal</span>
+                                        <span class="sub-price">$565</span>
+                                    </div>
+                                    <div class="total d-flex justify-content-between align-items-center">
+                                        <span class="subtotal">Discount (-20%)</span>
+                                        <span class="sub-price sub-price-main">-$113</span>
+                                    </div>
+                                    <div class="total d-flex justify-content-between align-items-center">
+                                        <span class="subtotal">Subtotal</span>
+                                        <span class="sub-price">$565</span>
+                                    </div>
+                                </div>
+                                <div class="total-main d-flex justify-content-between align-items-center">
+                                    <span class="total-finish">Total</span>
+                                    <span class="price-finish">$467</span>
+                                </div>
+                                <div class="apply">
+                                    <form class="d-flex">
+                                        <div class="input-apply position-relative">
+                                            <input type="text" placeholder="Add promo code">
+                                            <img class="position-absolute " src="../assets/images/apply.svg" alt="">
+                                        </div>
+                                        <button class="btn-apply">Apply</button>
+                                    </form>
+                                </div>
+                                <div class="text-center btn-checkout">
+                                    <a href="#" class="">Go to Checkout <i class="fa-solid fa-arrow-right"></i></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock content %}
