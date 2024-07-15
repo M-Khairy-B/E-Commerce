@@ -233,18 +233,14 @@ $(document).ready(function () {
         location.href = "productdetail.html";
     });
 
-    if (window.location.pathname === "/index.html" , "/"  ) {
-        $("#mainNavbar").removeClass("navbar-main");
-    }
-    
-});
-$(document).ready(function() {
+
     $('.small-img').click(function() {
         let newSrc = $(this).attr('src');
         console.log(newSrc);
         $('#large-img img').attr('src', newSrc);
     });
 });
+
 
 
 

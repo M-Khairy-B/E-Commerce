@@ -19313,12 +19313,6 @@
 	  jquery(".product-card-main").on("click", function () {
 	    location.href = "productdetail.html";
 	  });
-
-	  {
-	    jquery("#mainNavbar").removeClass("navbar-main");
-	  }
-	});
-	jquery(document).ready(function () {
 	  jquery('.small-img').click(function () {
 	    let newSrc = jquery(this).attr('src');
 	    console.log(newSrc);
