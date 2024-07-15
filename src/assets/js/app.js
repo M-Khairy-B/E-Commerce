@@ -5,7 +5,7 @@ import { test } from "./test";
 
 $(document).ready(() => {
     $(".main-slider").slick({
-        infinite: false,
+        infinite: true,
         speed: 300,
         nextArrow: ' <i class="fa-solid fa-arrow-right slick-prev-main "></i>',
         prevArrow: ' <i class="fa-solid fa-arrow-left  slick-next-main"></i>',
@@ -34,82 +34,85 @@ $(document).ready(() => {
             },
         ],
     });
+
+        
+    $(".main-slider-product").slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: false,
+        nextArrow: ' <i class="fa-solid fa-arrow-right slick-prev-main "></i>',
+        prevArrow: ' <i class="fa-solid fa-arrow-left  slick-next-main"></i>',
+
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    infinite: true,
+                    dots: true,
+                },
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                },
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    nextArrow: false,
+                    prevArrow: false,
+                },
+            },
+        ],
+    });
+
+    $(".main-slider-testmonial").slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        centerMode: true,
+        arrows: true,
+        centerPadding: "100px",
+        nextArrow: $(".slick-next-main-testmonial"),
+        prevArrow: $(".slick-prev-main-testmonial"),
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true,
+                },
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                },
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+        ],
+    });
 });
 
-$(".main-slider-product").slick({
-    dots: true,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    dots: false,
-    nextArrow: ' <i class="fa-solid fa-arrow-right slick-prev-main "></i>',
-    prevArrow: ' <i class="fa-solid fa-arrow-left  slick-next-main"></i>',
-
-    responsive: [
-        {
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-                infinite: true,
-                dots: true,
-            },
-        },
-        {
-            breakpoint: 600,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-            },
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                nextArrow: false,
-                prevArrow: false,
-            },
-        },
-    ],
-});
-
-$(".main-slider-testmonial").slick({
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    centerMode: true,
-    arrows: true,
-    centerPadding: "100px",
-    nextArrow: $(".slick-next-main"),
-    prevArrow: $(".slick-prev-main"),
-    responsive: [
-        {
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                infinite: true,
-                dots: true,
-            },
-        },
-        {
-            breakpoint: 600,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-            },
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-            },
-        },
-    ],
-});
 
 // let minRangeValueGap = 6;
 // const range = document.getElementById("range_track");
