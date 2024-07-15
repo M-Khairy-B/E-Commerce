@@ -366,7 +366,7 @@ header {
                     margin-bottom: 16px;
                     img {
                         border-radius: 20px;
-                        height: 402px;
+                        height: 298px;
                     }
                 }
                 h3 {
@@ -718,8 +718,7 @@ header {
             }
         }
 
-        .small-image {
-            gap: 14px;
+        .small-img {
             cursor: pointer;
         }
         .details {
@@ -1758,5 +1757,8 @@ header {
     }
     .ads .row {
         --bs-gutter-x:0;
+    }
+    .productdetail .productdetails .row {
+        --bs-gutter-x: 0;
     }
 }
