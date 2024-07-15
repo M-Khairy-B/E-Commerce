@@ -79,8 +79,11 @@ $(".main-slider-testmonial").slick({
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    nextArrow: ' <i class="fa-solid fa-arrow-right slick-prev-main "></i>',
-    prevArrow: ' <i class="fa-solid fa-arrow-left  slick-next-main"></i>',
+    centerMode: true,
+    arrows: true,
+    centerPadding: "100px",
+    nextArrow: $(".slick-next-main"),
+    prevArrow: $(".slick-prev-main"),
     responsive: [
         {
             breakpoint: 1024,
@@ -222,7 +225,11 @@ $(document).ready(function () {
 
     $(".modal-star").click(function () {
         $(".modal-star").removeClass("active text-white");
-        $(this).prevAll().addBack().addClass("active").removeClass("text-white");
+        $(this)
+            .prevAll()
+            .addBack()
+            .addClass("active")
+            .removeClass("text-white");
     });
 
     $("#close").click(function () {
@@ -233,14 +240,9 @@ $(document).ready(function () {
         location.href = "productdetail.html";
     });
 
-
-    $('.small-img').click(function() {
-        let newSrc = $(this).attr('src');
+    $(".small-img").click(function () {
+        let newSrc = $(this).attr("src");
         console.log(newSrc);
-        $('#large-img img').attr('src', newSrc);
+        $("#large-img img").attr("src", newSrc);
     });
 });
-
-
-
-

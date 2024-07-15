@@ -19180,8 +19180,11 @@
 	  infinite: true,
 	  slidesToShow: 3,
 	  slidesToScroll: 1,
-	  nextArrow: ' <i class="fa-solid fa-arrow-right slick-prev-main "></i>',
-	  prevArrow: ' <i class="fa-solid fa-arrow-left  slick-next-main"></i>',
+	  centerMode: true,
+	  arrows: true,
+	  centerPadding: "100px",
+	  nextArrow: jquery(".slick-next-main"),
+	  prevArrow: jquery(".slick-prev-main"),
 	  responsive: [{
 	    breakpoint: 1024,
 	    settings: {
@@ -19313,10 +19316,10 @@
 	  jquery(".product-card-main").on("click", function () {
 	    location.href = "productdetail.html";
 	  });
-	  jquery('.small-img').click(function () {
-	    let newSrc = jquery(this).attr('src');
+	  jquery(".small-img").click(function () {
+	    let newSrc = jquery(this).attr("src");
 	    console.log(newSrc);
-	    jquery('#large-img img').attr('src', newSrc);
+	    jquery("#large-img img").attr("src", newSrc);
 	  });
 	});
 
