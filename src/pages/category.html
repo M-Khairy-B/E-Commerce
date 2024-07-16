@@ -1,0 +1,876 @@
+{% extends "layout.html" %} {% set title = 'Category' %} {% block content %}
+
+<section class="category">
+    <div class="container">
+        <div class="col-12 col-lg-4">
+            <div class="title-page d-flex align-items-center">
+                <div class="title-main">
+                    <span>Home</span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+
+                <span class="main-tilte">T-shirts</span>
+            </div>
+        </div>
+    </div>
+    <div class="categories">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-3">
+                    <div class="all-details">
+                        <div class="filters">
+                            <div
+                                class="head-icon d-flex justify-content-between align-items-center"
+                            >
+                                <h6>Filters</h6>
+                                <i class="fa-solid fa-sliders"></i>
+                            </div>
+                            <div class="accordions">
+                                <div
+                                    class="accordion accordion-flush"
+                                    id="accordionFlushExample"
+                                >
+                                    <div class="accordion-item">
+                                        <h2
+                                            class="accordion-header"
+                                            id="flush-headingOne"
+                                        >
+                                            <button
+                                                class="accordion-button collapsed"
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#flush-collapseOne"
+                                                aria-expanded="false"
+                                                aria-controls="flush-collapseOne"
+                                            >
+                                                T-shirts
+                                            </button>
+                                        </h2>
+                                        <div
+                                            id="flush-collapseOne"
+                                            class="accordion-collapse collapse"
+                                            aria-labelledby="flush-headingOne"
+                                            data-bs-parent="#accordionFlushExample"
+                                        >
+                                            <div class="accordion-body">
+                                                Placeholder content for this
+                                                accordion, which is intended to
+                                                demonstrate the
+                                                <code>.accordion-flush</code>
+                                                class. This is the first item's
+                                                accordion body.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2
+                                            class="accordion-header"
+                                            id="flush-headingTwo"
+                                        >
+                                            <button
+                                                class="accordion-button collapsed"
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#flush-collapseTwo"
+                                                aria-expanded="false"
+                                                aria-controls="flush-collapseTwo"
+                                            >
+                                                Shorts
+                                            </button>
+                                        </h2>
+                                        <div
+                                            id="flush-collapseTwo"
+                                            class="accordion-collapse collapse"
+                                            aria-labelledby="flush-headingTwo"
+                                            data-bs-parent="#accordionFlushExample"
+                                        >
+                                            <div class="accordion-body">
+                                                Placeholder content for this
+                                                accordion, which is intended to
+                                                demonstrate the
+                                                <code>.accordion-flush</code>
+                                                class. This is the second item's
+                                                accordion body. Let's imagine
+                                                this being filled with some
+                                                actual content.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2
+                                            class="accordion-header"
+                                            id="flush-headingThree"
+                                        >
+                                            <button
+                                                class="accordion-button collapsed"
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#flush-collapseThree"
+                                                aria-expanded="false"
+                                                aria-controls="flush-collapseThree"
+                                            >
+                                                Shirts
+                                            </button>
+                                        </h2>
+                                        <div
+                                            id="flush-collapseThree"
+                                            class="accordion-collapse collapse"
+                                            aria-labelledby="flush-headingThree"
+                                            data-bs-parent="#accordionFlushExample"
+                                        >
+                                            <div class="accordion-body">
+                                                Placeholder content for this
+                                                accordion, which is intended to
+                                                demonstrate the
+                                                <code>.accordion-flush</code>
+                                                class. This is the third item's
+                                                accordion body. Nothing more
+                                                exciting happening here in terms
+                                                of content, but just filling up
+                                                the space to make it look, at
+                                                least at first glance, a bit
+                                                more representative of how this
+                                                would look in a real-world
+                                                application.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2
+                                            class="accordion-header"
+                                            id="flush-headingFour"
+                                        >
+                                            <button
+                                                class="accordion-button collapsed"
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#flush-collapseFour"
+                                                aria-expanded="false"
+                                                aria-controls="flush-collapseFour"
+                                            >
+                                                Hoodie
+                                            </button>
+                                        </h2>
+                                        <div
+                                            id="flush-collapseFour"
+                                            class="accordion-collapse collapse"
+                                            aria-labelledby="flush-headingFour"
+                                            data-bs-parent="#accordionFlushExample"
+                                        >
+                                            <div class="accordion-body">
+                                                Placeholder content for this
+                                                accordion, which is intended to
+                                                demonstrate the
+                                                <code>.accordion-flush</code>
+                                                class. This is the third item's
+                                                accordion body. Nothing more
+                                                exciting happening here in terms
+                                                of content, but just filling up
+                                                the space to make it look, at
+                                                least at first glance, a bit
+                                                more representative of how this
+                                                would look in a real-world
+                                                application.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2
+                                            class="accordion-header"
+                                            id="flush-headingFive"
+                                        >
+                                            <button
+                                                class="accordion-button collapsed"
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#flush-collapseFive"
+                                                aria-expanded="false"
+                                                aria-controls="flush-collapseFive"
+                                            >
+                                                Jeans
+                                            </button>
+                                        </h2>
+                                        <div
+                                            id="flush-collapseFive"
+                                            class="accordion-collapse collapse"
+                                            aria-labelledby="flush-headingThree"
+                                            data-bs-parent="#accordionFlushExample"
+                                        >
+                                            <div class="accordion-body">
+                                                Placeholder content for this
+                                                accordion, which is intended to
+                                                demonstrate the
+                                                <code>.accordion-flush</code>
+                                                class. This is the third item's
+                                                accordion body. Nothing more
+                                                exciting happening here in terms
+                                                of content, but just filling up
+                                                the space to make it look, at
+                                                least at first glance, a bit
+                                                more representative of how this
+                                                would look in a real-world
+                                                application.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2
+                                            class="accordion-header"
+                                            id="headingOne"
+                                        >
+                                            <button
+                                                class="accordion-button"
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#collapseOne"
+                                                aria-expanded="true"
+                                                aria-controls="collapseOne"
+                                            >
+                                                Price
+                                            </button>
+                                        </h2>
+                                        <div
+                                            id="collapseOne"
+                                            class="accordion-collapse collapse show"
+                                            aria-labelledby="headingOne"
+                                            data-bs-parent="#accordionExample"
+                                        >
+                                            <div class="accordion-body">
+                                                <div
+                                                    class="double_range_slider_box"
+                                                >
+                                                    <div
+                                                        class="double_range_slider"
+                                                    >
+                                                        <span
+                                                            class="range_track"
+                                                            id="range_track"
+                                                        ></span>
+
+                                                        <input
+                                                            type="range"
+                                                            class="min"
+                                                            min="0"
+                                                            max="100"
+                                                            value="0"
+                                                            step="0"
+                                                        />
+                                                        <input
+                                                            type="range"
+                                                            class="max"
+                                                            min="0"
+                                                            max="100"
+                                                            value="20"
+                                                            step="0"
+                                                        />
+
+                                                        <div
+                                                            class="minvalue"
+                                                        ></div>
+                                                        <div
+                                                            class="maxvalue"
+                                                        ></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="change-color">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2
+                                            class="accordion-header"
+                                            id="headingColor"
+                                        >
+                                            <button
+                                                class="accordion-button"
+                                                type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#collapseColor"
+                                                aria-expanded="true"
+                                                aria-controls="collapseColor"
+                                            >
+                                                Colors
+                                            </button>
+                                        </h2>
+                                        <div
+                                            id="collapseColor"
+                                            class="accordion-collapse collapse show"
+                                            aria-labelledby="headingOne"
+                                            data-bs-parent="#accordionExample"
+                                        >
+                                            <div class="accordion-body">
+                                                <div
+                                                    class="all-circle d-flex align-items-center flex-wrap"
+                                                >
+                                                    <div class="circle-color">
+                                                        <i
+                                                            class="fa-solid fa-check position-absolute"
+                                                        ></i>
+                                                    </div>
+                                                    <div class="circle-color">
+                                                        <i
+                                                            class="fa-solid fa-check position-absolute"
+                                                        ></i>
+                                                    </div>
+                                                    <div class="circle-color">
+                                                        <i
+                                                            class="fa-solid fa-check position-absolute"
+                                                        ></i>
+                                                    </div>
+                                                    <div class="circle-color">
+                                                        <i
+                                                            class="fa-solid fa-check position-absolute"
+                                                        ></i>
+                                                    </div>
+                                                    <div class="circle-color">
+                                                        <i
+                                                            class="fa-solid fa-check position-absolute"
+                                                        ></i>
+                                                    </div>
+                                                    <div class="circle-color">
+                                                        <i
+                                                            class="fa-solid fa-check position-absolute"
+                                                        ></i>
+                                                    </div>
+                                                    <div class="circle-color">
+                                                        <i
+                                                            class="fa-solid fa-check position-absolute"
+                                                        ></i>
+                                                    </div>
+                                                    <div
+                                                        class="circle-color"
+                                                    >                                                        <i
+                                                    class="fa-solid fa-check position-absolute"
+                                                ></i></div>
+                                                    <div
+                                                        class="circle-color"
+                                                    >                                                        <i
+                                                    class="fa-solid fa-check position-absolute"
+                                                ></i></div>
+                                                    <div
+                                                        class="circle-color"
+                                                    >                                                        <i
+                                                    class="fa-solid fa-check position-absolute"
+                                                ></i></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="allSize">
+                                <div class="sizes">
+                                    <div
+                                        class="accordion"
+                                        id="accordionExample"
+                                    >
+                                        <div class="accordion-item">
+                                            <h2
+                                                class="accordion-header"
+                                                id="headingSize"
+                                            >
+                                                <button
+                                                    class="accordion-button"
+                                                    type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseSize"
+                                                    aria-expanded="true"
+                                                    aria-controls="collapseSize"
+                                                >
+                                                    Size
+                                                </button>
+                                            </h2>
+                                            <div
+                                                id="collapseSize"
+                                                class="accordion-collapse collapse show"
+                                                aria-labelledby="headingSize"
+                                                data-bs-parent="#accordionExample"
+                                            >
+                                                <div class="accordion-body">
+                                                    <div class="choice-size">
+                                                        <div class="type-size">
+                                                            <span  class="active"
+                                                                >XX-Small</span
+                                                            >
+                                                        </div>
+                                                        <div class="type-size">
+                                                            <span>X-Small</span>
+                                                        </div>
+                                                        <div class="type-size">
+                                                            <span>Small</span>
+                                                        </div>
+                                                        <div class="type-size">
+                                                            <span>Medium</span>
+                                                        </div>
+                                                        <div class="type-size">
+                                                            <span>Large</span>
+                                                        </div>
+                                                        <div class="type-size">
+                                                            <span>X-Large</span>
+                                                        </div>
+                                                        <div class="type-size">
+                                                            <span
+                                                                >XX-Large</span
+                                                            >
+                                                        </div>
+                                                        <div class="type-size">
+                                                            <span
+                                                                >3X-Large</span
+                                                            >
+                                                        </div>
+                                                        <div class="type-size">
+                                                            <span
+                                                                >4X-Large</span
+                                                            >
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dress-style">
+                                <div class="syle-dress">
+                                    <div
+                                        class="accordion"
+                                        id="accordionExample"
+                                    >
+                                        <div class="accordion-item">
+                                            <h2
+                                                class="accordion-header"
+                                                id="headingDress"
+                                            >
+                                                <button
+                                                    class="accordion-button"
+                                                    type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseDress"
+                                                    aria-expanded="true"
+                                                    aria-controls="collapseDress"
+                                                >
+                                                    Dress Style
+                                                </button>
+                                            </h2>
+                                            <div
+                                                id="collapseDress"
+                                                class="accordion-collapse collapse show"
+                                                aria-labelledby="headingDress"
+                                                data-bs-parent="#accordionExample"
+                                            >
+                                                <div class="accordion-body">
+                                                    <div
+                                                        class="accordion"
+                                                        id="accordionExample"
+                                                    >
+                                                        <div
+                                                            class="accordion-item"
+                                                        >
+                                                            <h2
+                                                                class="accordion-header"
+                                                                id="headingOne"
+                                                            >
+                                                                <button
+                                                                    class="accordion-button collapsed"
+                                                                    type="button"
+                                                                    data-bs-toggle="collapse"
+                                                                    data-bs-target="#collapseOne"
+                                                                    aria-expanded="false"
+                                                                    aria-controls="collapseOne"
+                                                                >
+                                                                    Casual
+                                                                </button>
+                                                            </h2>
+                                                            <div
+                                                                id="collapseOne"
+                                                                class="accordion-collapse collapse"
+                                                                aria-labelledby="headingTwo"
+                                                                data-bs-parent="#accordionExample"
+                                                            >
+                                                                <div
+                                                                    class="accordion-body"
+                                                                >
+                                                                    <strong
+                                                                        >This is
+                                                                        the
+                                                                        second
+                                                                        item's
+                                                                        accordion
+                                                                        body.</strong
+                                                                    >
+                                                                    It is hidden
+                                                                    by default,
+                                                                    until the
+                                                                    collapse
+                                                                    plugin adds
+                                                                    the
+                                                                    appropriate
+                                                                    classes that
+                                                                    we use to
+                                                                    style each
+                                                                    element.
+                                                                    These
+                                                                    classes
+                                                                    control the
+                                                                    overall
+                                                                    appearance,
+                                                                    as well as
+                                                                    the showing
+                                                                    and hiding
+                                                                    via CSS
+                                                                    transitions.
+                                                                    You can
+                                                                    modify any
+                                                                    of this with
+                                                                    custom CSS
+                                                                    or
+                                                                    overriding
+                                                                    our default
+                                                                    variables.
+                                                                    It's also
+                                                                    worth noting
+                                                                    that just
+                                                                    about any
+                                                                    HTML can go
+                                                                    within the
+                                                                    <code
+                                                                        >.accordion-body</code
+                                                                    >, though
+                                                                    the
+                                                                    transition
+                                                                    does limit
+                                                                    overflow.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="accordion-item"
+                                                        >
+                                                            <h2
+                                                                class="accordion-header"
+                                                                id="headingTwo"
+                                                            >
+                                                                <button
+                                                                    class="accordion-button collapsed"
+                                                                    type="button"
+                                                                    data-bs-toggle="collapse"
+                                                                    data-bs-target="#collapseTwo"
+                                                                    aria-expanded="false"
+                                                                    aria-controls="collapseTwo"
+                                                                >
+                                                                    Formal
+                                                                </button>
+                                                            </h2>
+                                                            <div
+                                                                id="collapseTwo"
+                                                                class="accordion-collapse collapse"
+                                                                aria-labelledby="headingTwo"
+                                                                data-bs-parent="#accordionExample"
+                                                            >
+                                                                <div
+                                                                    class="accordion-body"
+                                                                >
+                                                                    <strong
+                                                                        >This is
+                                                                        the
+                                                                        second
+                                                                        item's
+                                                                        accordion
+                                                                        body.</strong
+                                                                    >
+                                                                    It is hidden
+                                                                    by default,
+                                                                    until the
+                                                                    collapse
+                                                                    plugin adds
+                                                                    the
+                                                                    appropriate
+                                                                    classes that
+                                                                    we use to
+                                                                    style each
+                                                                    element.
+                                                                    These
+                                                                    classes
+                                                                    control the
+                                                                    overall
+                                                                    appearance,
+                                                                    as well as
+                                                                    the showing
+                                                                    and hiding
+                                                                    via CSS
+                                                                    transitions.
+                                                                    You can
+                                                                    modify any
+                                                                    of this with
+                                                                    custom CSS
+                                                                    or
+                                                                    overriding
+                                                                    our default
+                                                                    variables.
+                                                                    It's also
+                                                                    worth noting
+                                                                    that just
+                                                                    about any
+                                                                    HTML can go
+                                                                    within the
+                                                                    <code
+                                                                        >.accordion-body</code
+                                                                    >, though
+                                                                    the
+                                                                    transition
+                                                                    does limit
+                                                                    overflow.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="accordion-item"
+                                                        >
+                                                            <h2
+                                                                class="accordion-header"
+                                                                id="headingThree"
+                                                            >
+                                                                <button
+                                                                    class="accordion-button collapsed"
+                                                                    type="button"
+                                                                    data-bs-toggle="collapse"
+                                                                    data-bs-target="#collapseThree"
+                                                                    aria-expanded="false"
+                                                                    aria-controls="collapseThree"
+                                                                >
+                                                                    Party
+                                                                </button>
+                                                            </h2>
+                                                            <div
+                                                                id="collapseThree"
+                                                                class="accordion-collapse collapse"
+                                                                aria-labelledby="headingThree"
+                                                                data-bs-parent="#accordionExample"
+                                                            >
+                                                                <div
+                                                                    class="accordion-body"
+                                                                >
+                                                                    <strong
+                                                                        >This is
+                                                                        the
+                                                                        third
+                                                                        item's
+                                                                        accordion
+                                                                        body.</strong
+                                                                    >
+                                                                    It is hidden
+                                                                    by default,
+                                                                    until the
+                                                                    collapse
+                                                                    plugin adds
+                                                                    the
+                                                                    appropriate
+                                                                    classes that
+                                                                    we use to
+                                                                    style each
+                                                                    element.
+                                                                    These
+                                                                    classes
+                                                                    control the
+                                                                    overall
+                                                                    appearance,
+                                                                    as well as
+                                                                    the showing
+                                                                    and hiding
+                                                                    via CSS
+                                                                    transitions.
+                                                                    You can
+                                                                    modify any
+                                                                    of this with
+                                                                    custom CSS
+                                                                    or
+                                                                    overriding
+                                                                    our default
+                                                                    variables.
+                                                                    It's also
+                                                                    worth noting
+                                                                    that just
+                                                                    about any
+                                                                    HTML can go
+                                                                    within the
+                                                                    <code
+                                                                        >.accordion-body</code
+                                                                    >, though
+                                                                    the
+                                                                    transition
+                                                                    does limit
+                                                                    overflow.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="accordion-item"
+                                                        >
+                                                            <h2
+                                                                class="accordion-header"
+                                                                id="headingFour"
+                                                            >
+                                                                <button
+                                                                    class="accordion-button collapsed"
+                                                                    type="button"
+                                                                    data-bs-toggle="collapse"
+                                                                    data-bs-target="#collapseFour"
+                                                                    aria-expanded="false"
+                                                                    aria-controls="collapseFour"
+                                                                >
+                                                                    Gym
+                                                                </button>
+                                                            </h2>
+                                                            <div
+                                                                id="collapseFour"
+                                                                class="accordion-collapse collapse"
+                                                                aria-labelledby="headingFour"
+                                                                data-bs-parent="#accordionExample"
+                                                            >
+                                                                <div
+                                                                    class="accordion-body"
+                                                                >
+                                                                    <strong
+                                                                        >This is
+                                                                        the
+                                                                        third
+                                                                        item's
+                                                                        accordion
+                                                                        body.</strong
+                                                                    >
+                                                                    It is hidden
+                                                                    by default,
+                                                                    until the
+                                                                    collapse
+                                                                    plugin adds
+                                                                    the
+                                                                    appropriate
+                                                                    classes that
+                                                                    we use to
+                                                                    style each
+                                                                    element.
+                                                                    These
+                                                                    classes
+                                                                    control the
+                                                                    overall
+                                                                    appearance,
+                                                                    as well as
+                                                                    the showing
+                                                                    and hiding
+                                                                    via CSS
+                                                                    transitions.
+                                                                    You can
+                                                                    modify any
+                                                                    of this with
+                                                                    custom CSS
+                                                                    or
+                                                                    overriding
+                                                                    our default
+                                                                    variables.
+                                                                    It's also
+                                                                    worth noting
+                                                                    that just
+                                                                    about any
+                                                                    HTML can go
+                                                                    within the
+                                                                    <code
+                                                                        >.accordion-body</code
+                                                                    >, though
+                                                                    the
+                                                                    transition
+                                                                    does limit
+                                                                    overflow.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="apply-fliter">
+                                <a href="">Apply Filter</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-9">
+                    <div class="container">
+                        <div
+                            class="d-flex justify-content-between align-items-center casual"
+                        >
+                            <h6>Casual</h6>
+                            <div>
+                                <span class="show"
+                                    >Showing 1-10 of 100 Products</span
+                                >
+                                <span class="sort"
+                                    >Sort by:
+                                    <span class="most-popular">
+                                        Most Popular</span
+                                    ></span
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="categories-details">
+                        <div class="container">
+                            <div class="row">
+                                {% import "component/card.html" as cards %} {%
+                                for item in dataEn.allCards.casual %} {{
+                                cards.cardTwo(item) }} {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="pagination-main d-flex align-items-center justify-content-between"
+                    >
+                        <button class="btn-pagination">
+                            <i class="fa-solid fa-arrow-left"></i>Previous
+                        </button>
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a class="page-link" href="#">1</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">2</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">3</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#"
+                                        ><i class="fa-solid fa-ellipsis"></i
+                                    ></a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">8</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">9</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">10</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <button class="btn-pagination btn-next">
+                            Next <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}
