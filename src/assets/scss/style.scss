@@ -1,3 +1,19 @@
+
+@font-face {
+    font-family: 'Integral CF';
+    src: url('../fonts/Fontspring-DEMO-integralcf-extrabold.otf');
+    font-weight: 700;
+}
+@font-face {
+    font-family:' Integral CF';
+    src: url('../fonts/Fontspring-DEMO-integralcf-bold');
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Integral CF';
+    src: url('../fonts/Araboto-Black.ttf');
+    font-weight: 800;
+}
 @font-face {
     font-family: "Satoshi-Variable-Light";
     src: url("../fonts/Satoshi-Light.woff2") format("woff2"),
@@ -291,7 +307,6 @@ header {
                             color: #00000099;
                         }
                     }
-                    
                 }
             }
 
@@ -337,7 +352,7 @@ header {
     }
     .wrapper-main {
         border-bottom: 1px solid #0000001a;
-        padding-bottom: 64px;
+        padding-bottom: 80px;
         .slick-track {
             display: flex;
             gap: 20px;
@@ -478,7 +493,7 @@ header {
 }
 .testmonial {
     padding: 80px 0;
-    h2 {
+    .our-happy {
         font-family: "Integral CF";
         font-size: 48px;
         font-weight: 700;
@@ -489,10 +504,8 @@ header {
     .slick-prev-main-testmonial,
     .slick-next-main-testmonial {
         cursor: pointer;
-
     }
     .main-slider-testmonial {
-
         .slider-testmonail {
             .row {
                 --bs-gutter-x: 0;
@@ -536,7 +549,7 @@ header {
         }
         .slick-slide {
             filter: blur(2px);
-            
+
             &.slick-active {
                 filter: none;
             }
@@ -546,7 +559,7 @@ header {
 .subscribe {
     .wrapper-subscribe {
         background-color: $main-color;
-        padding: 36px 64px;
+        padding: 43px 64px;
         border-radius: 20px;
         margin-bottom: -97px;
         position: relative;
@@ -568,6 +581,9 @@ header {
                         border-radius: 62px;
                         margin-bottom: 14px;
                         border: 0;
+                        &::placeholder {
+                            color: #00000066;
+                        }
                     }
                     img {
                         top: 15px;
@@ -1043,7 +1059,7 @@ header {
                 }
             }
             .name-review {
-                margin-bottom: 16px;
+                margin-bottom: 12px;
                 h6 {
                     font-family: "Satoshi-Variable";
                     font-size: 20px;
@@ -1374,7 +1390,7 @@ header {
                 text-align: center;
                 margin-bottom: 29px;
                 a {
-                    padding: 16px 54px;
+                    padding: 16px 87px;
                     border-radius: 62px;
                     background-color: $main-color;
                     color: #fff;
@@ -1593,11 +1609,12 @@ header {
                             color: $main-color;
                             margin-bottom: 4px;
                             span {
-                                font-family: Satoshi-Variable;
+                                font-family:" Satoshi-Variable";
                                 font-size: 14px;
                                 font-weight: 400;
                                 line-height: 18.9px;
-                                color: #000000;
+                                color: #00000099;
+
                             }
                         }
                         .color-cart {
