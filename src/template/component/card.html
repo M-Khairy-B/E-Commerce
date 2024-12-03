@@ -1,0 +1,67 @@
+{% macro card(data={}) %}
+<div class="col-12 col-lg-3">
+    <div class="product-card-main">
+        <div class="product-image">
+            <img class="w-100" src="{{ data.src }}" alt="" />
+        </div>
+        <div class="product-content">
+            <h3>{{ data.title }}</h3>
+            <div class="stars d-flex align-items-center" id="product-stars">
+                <div class="rating-star">
+                    {% set full_stars = data.rating | default(0) %} {% set
+                        empty_stars = 5 - full_stars %} {% for _ in range(full_stars) %}
+                        <i class="fa-solid fa-star"></i>
+                        {% endfor %} {% for _ in range(empty_stars) %}
+                        <i class="fa-regular fa-star"></i>
+                        {% endfor %}
+                </div>
+                <div class="number-star">
+                    <span id="star-rating">{{ data.rating }}</span>/5
+                </div>
+            </div>
+            <div class="price-container d-flex align-items-center">
+                <div class="price">{{ data.price }}</div>
+                {% if data['price-discount'] %}
+                <div class="price-discount">{{ data['price-discount'] }}</div>
+                <div class="discount-percentage">
+                    <span>{{ data['discount-percentage'] }}</span>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endmacro %} {% macro cardTwo(data={}) %}
+<div class="col-12 col-lg-4">
+    <div class="product-card-main">
+        <div class="product-image">
+            <img class="w-100" src="{{ data.src }}" alt="" />
+        </div>
+        <div class="product-content">
+            <h3>{{ data.title }}</h3>
+            <div class="stars d-flex align-items-center" id="product-stars">
+                <div class="rating-star">
+                    {% set full_stars = data.rating | default(0) %} {% set
+                        empty_stars = 5 - full_stars %} {% for _ in range(full_stars) %}
+                        <i class="fa-solid fa-star"></i>
+                        {% endfor %} {% for _ in range(empty_stars) %}
+                        <i class="fa-regular fa-star"></i>
+                        {% endfor %}
+                </div>
+                <div class="number-star">
+                    <span id="star-rating">{{ data.rating }}</span>/5
+                </div>
+            </div>
+            <div class="price-container d-flex align-items-center">
+                <div class="price">{{ data.price }}</div>
+                {% if data['price-discount'] %}
+                <div class="price-discount">{{ data['price-discount'] }}</div>
+                <div class="discount-percentage">
+                    <span>{{ data['discount-percentage'] }}</span>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endmacro %}

@@ -1,0 +1,28 @@
+{% macro cardreview (data={}) %}
+<div class="col-12 col-lg-6">
+    <div class="cards-review">
+        <div class="rating-star d-flex justify-content-between">
+            <div class="rating-star-item">
+                {% set full_stars = data.stars | default(0) %} {% set
+                empty_stars = 5 - full_stars %} {% for _ in range(full_stars) %}
+                <i class="fa-solid fa-star"></i>
+                {% endfor %} {% for _ in range(empty_stars) %}
+                <i class="fa-regular fa-star"></i>
+                {% endfor %}
+            </div>
+            <i class="fa-solid fa-ellipsis"></i>
+        </div>
+        <div class="name-review d-flex align-items-center">
+            <h6>{{ data.name }}</h6>
+            <img src="../assets/images/mark.svg" alt="" />
+        </div>
+        <div class="review-text">
+            <p>{{ data.text }}</p>
+        </div>
+        <div class="date-review">
+            <span>{{ data.date }}</span>
+        </div>
+    </div>
+</div>
+
+{% endmacro %}

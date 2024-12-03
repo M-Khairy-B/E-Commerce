@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        
+        Cart | Website Name
+        
+    </title>
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <meta name="csrf-token" content="">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--<link rel="stylesheet" href="assets/css/style-rtl.css">-->
+
+    <!-- FavIcon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- OG Meta -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="">
+    <meta property="og:image" content="">
+    <meta property="og:description" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="fb:page_id" content="" />
+
+    <meta name="twitter:card" content="">
+    <meta name="twitter:site" content="@site_account">
+    <meta name="twitter:creator" content="@individual_account">
+    <meta name="twitter:url" content="">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
+
+    <link rel="canonical" href="/" >
+
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!--[if lte IE 9]>
+    <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.
+    </p>
+    <![endif]-->
+
+    <header>
+    <div class="text-center offer-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 position-relative">
+                    <span class="position-relative"
+                        >Sign up and get 20% off to your first order.
+                        <span> <a href="# " class="text-decoration-underline text-white"> Sign Up Now </a></span></span
+                    >
+                    <button
+                        id="close"
+                        class="d-none d-md-block position-absolute top-0 end-0 border-0"
+                    >
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <nav
+            class="navbar justify-content-between lg:justify-content-between navbar-expand-lg bg-body-tertiary  navbar-main "
+            id="mainNavbar"
+        >
+            <div class="d-flex">
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span
+                        class="navbar-toggler-icon d-flex align-items-center justify-content-center"
+                        ><i class="fa-solid fa-bars"></i
+                    ></span>
+                </button>
+                <h1>
+                    <a class="navbar-brand" href="index.html"
+                        ><img src="assets/images/SHOP.CO.svg" alt=""
+                    /></a>
+                </h1>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                        >
+                            Shop<i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="#">Action</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#"
+                                    >Another action</a
+                                >
+                            </li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li>
+                                <a class="dropdown-item" href="#"
+                                    >Something else here</a
+                                >
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"
+                            >On Sale</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"
+                            >New Arrivals</a
+                        >
+                    </li>
+                    <li class="nav-item me-0">
+                        <a
+                            class="nav-link active"
+                            aria-current="page"
+                            href="category.html"
+                            >Brands</a
+                        >
+                    </li>
+                </ul>
+                <form class="d-flex flex-grow-1" role="search">
+                    <input
+                        class="form-control"
+                        type="search"
+                        placeholder="Search"
+                        aria-label="Search"
+                    />
+                </form>
+            </div>
+            <div class="d-flex align-items-center">
+                <a href="cart.html" class="d-flex">
+                    <img class="icon-cart" src="assets/images/cart.svg" alt=""
+                /></a>
+                <a href="#" class="d-flex">
+                    <img
+                        class="user-icon"
+                        src="assets/images/user.svg"
+                        alt=""
+                    />
+                </a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+
+    <main>
+        
+<section class="cart">
+    <div class="container">
+        <div class="col-12 col-lg-4">
+            <div class="title-page d-flex align-items-center">
+                <div class="title-main">
+                    <span>Home</span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+
+                <span class="main-tilte">Cart</span>
+            </div>
+        </div>
+        <div class="cart-title">
+            <div class="container">
+                <h2>Your cart</h2>
+            </div>
+        </div>
+        <div class="cart-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-7">
+                        <div class="cart-details">
+                            <div class="cart-product">
+                                <div class="cart-img">
+                                    <img
+                                        src="assets/images/gradient-cart.jpg"
+                                        alt=""
+                                    />
+                                </div>
+                                <div
+                                    class="cart-details-main d-flex justify-content-between"
+                                >
+                                    <div class="cart-title-main d-flex flex-column">
+                                        <h6>Gradient Graphic T-shirt</h6>
+                                        <span class="size-cart"
+                                            >Sizes: <span>Large</span></span
+                                        >
+                                        <span class="color-cart"
+                                            >Color: <span>White</span></span
+                                        >
+                                        <span class="price-cart">$145</span>
+                                    </div>
+                                    <div
+                                        class="delete-count d-flex flex-column justify-content-between"
+                                    >
+                                        <a href="#" class="delete-cart"
+                                            ><img
+                                                src="assets/images/delete.svg"
+                                                alt=""
+                                        /></a>
+                                        <div class="counter">
+                                            <button>
+                                                <i class="fa-solid fa-minus"></i>
+                                            </button>
+                                            <span>1</span>
+                                            <button>
+                                                <i class="fa-solid fa-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-product">
+                                <div class="cart-img">
+                                    <img
+                                        src="assets/images/gradient-cart.jpg"
+                                        alt=""
+                                    />
+                                </div>
+                                <div
+                                    class="cart-details-main d-flex justify-content-between"
+                                >
+                                    <div class="cart-title-main d-flex flex-column">
+                                        <h6>Gradient Graphic T-shirt</h6>
+                                        <span class="size-cart"
+                                            >Sizes: <span>Large</span></span
+                                        >
+                                        <span class="color-cart"
+                                            >Color: <span>White</span></span
+                                        >
+                                        <span class="price-cart">$145</span>
+                                    </div>
+                                    <div
+                                        class="delete-count d-flex flex-column justify-content-between"
+                                    >
+                                        <a href="#" class="delete-cart"
+                                            ><img
+                                                src="assets/images/delete.svg"
+                                                alt=""
+                                        /></a>
+                                        <div class="counter">
+                                            <button>
+                                                <i class="fa-solid fa-minus"></i>
+                                            </button>
+                                            <span>1</span>
+                                            <button>
+                                                <i class="fa-solid fa-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-product">
+                                <div class="cart-img">
+                                    <img
+                                        src="assets/images/gradient-cart.jpg"
+                                        alt=""
+                                    />
+                                </div>
+                                <div
+                                    class="cart-details-main d-flex justify-content-between"
+                                >
+                                    <div class="cart-title-main d-flex flex-column">
+                                        <h6>Gradient Graphic T-shirt</h6>
+                                        <span class="size-cart"
+                                            >Sizes: <span>Large</span></span
+                                        >
+                                        <span class="color-cart"
+                                            >Color: <span>blue</span></span
+                                        >
+                                        <span class="price-cart">$240</span>
+                                    </div>
+                                    <div
+                                        class="delete-count d-flex flex-column justify-content-between"
+                                    >
+                                        <a href="#" class="delete-cart"
+                                            ><img
+                                                src="assets/images/delete.svg"
+                                                alt=""
+                                        /></a>
+                                        <div class="counter">
+                                            <button>
+                                                <i class="fa-solid fa-minus"></i>
+                                               </button>
+                                            <span>1</span>
+                                            <button>
+                                                <i class="fa-solid fa-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="co-12 col-lg-5">
+                        <div class="order-summary">
+                            <div class="order">
+                                <h6>Order Summary</h6>
+                                <div class="all-total">
+                                    <div class="total d-flex justify-content-between align-items-center">
+                                        <span class="subtotal">Subtotal</span>
+                                        <span class="sub-price">$565</span>
+                                    </div>
+                                    <div class="total d-flex justify-content-between align-items-center">
+                                        <span class="subtotal">Discount (-20%)</span>
+                                        <span class="sub-price sub-price-main">-$113</span>
+                                    </div>
+                                    <div class="total d-flex justify-content-between align-items-center">
+                                        <span class="subtotal">Subtotal</span>
+                                        <span class="sub-price">$565</span>
+                                    </div>
+                                </div>
+                                <div class="total-main d-flex justify-content-between align-items-center">
+                                    <span class="total-finish">Total</span>
+                                    <span class="price-finish">$467</span>
+                                </div>
+                                <div class="apply">
+                                    <form class="d-flex">
+                                        <div class="input-apply position-relative">
+                                            <input type="text" placeholder="Add promo code">
+                                            <img class="position-absolute " src="assets/images/apply.svg" alt="">
+                                        </div>
+                                        <button class="btn-apply">Apply</button>
+                                    </form>
+                                </div>
+                                <div class="text-center btn-checkout">
+                                    <a href="#" class="">Go to Checkout <i class="fa-solid fa-arrow-right"></i></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    </main>
+
+    <section class="subscribe">
+    <div class="container">
+        <div class="wrapper-subscribe">
+            <div class="row justify-content-between">
+                <div class="col-12 col-lg-6">
+                    <div class="subscribe-head">
+                        <h2>STAY UPTO DATE ABOUT OUR LATEST OFFERS</h2>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="subscribe-form">
+                        <form class="d-flex flex-column">
+                            <div class="position-relative all-input ">
+                                <input class="input-subscribe position-relative" type="text" placeholder="Enter your email address"/>
+                                <img class="position-absolute " src="assets/images/message.svg" alt="">
+                            </div>
+                            <button type="submit" class="button-subscribe">Subscribe to Newsletter</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="wrapper-footer">
+            <div class="row justify-content-between">
+                <div class="col-12 col-lg-3">
+                    <div class="logo-soical">
+                        <div class="logo-footer">
+                            <img src="assets/images/SHOP.CO.svg" alt="" />
+                        </div>
+                        <div class="text-footer">
+                            <p>
+                                We have clothes that suits your style and which
+                                you’re proud to wear. From women to men.
+                            </p>
+                        </div>
+                        <div class="soial-media d-flex align-items-center">
+                            <a class="circle-soial" href=""
+                                ><i class="fa-brands fa-twitter"></i
+                            ></a>
+                            <a class="circle-soial" href="">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a class="circle-soial" href="">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a class="circle-soial" href="#">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <div class="lists">
+                        <h6>Company</h6>
+                        <ul>
+                            <li>About</li>
+                            <li>Features</li>
+                            <li>Works</li>
+                            <li>Career</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <div class="lists">
+                        <h6>Help</h6>
+                        <ul>
+                            <li>Customer Support</li>
+                            <li>Delivery Details</li>
+                            <li>Terms & Conditions</li>
+                            <li>Privacy Policy</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <div class="lists">
+                        <h6>FAQ</h6>
+                        <ul>
+                            <li>Account</li>
+                            <li>Manage Deliveries</li>
+                            <li>Orders</li>
+                            <li>Payments</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <div class="lists">
+                        <h6>Resources</h6>
+                        <ul>
+                            <li>Free eBooks</li>
+                            <li>Development Tutorial</li>
+                            <li>How to - Blog</li>
+                            <li>Youtube Playlist</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="caption-main">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-12 col-lg-3">
+                    <span>Shop.co © 2000-2023, All Rights Reserved</span>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div class="payment d-flex align-items-center">
+                        <span>
+                            <img src="assets/images/Visa.svg" alt="" />
+                        </span>
+                        <span>
+                            <img src="assets/images/Mastercard.svg" alt="" />
+                        </span>
+                        <span>
+                            <img src="assets/images/paypal.svg" alt="" />
+                        </span>
+                        <span>
+                            <img src="assets/images/ Pay.svg" alt="" />
+                        </span>
+                        <span>
+                            <img src="assets/images/G Pay.svg" alt="" />
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="assets/js/app.js"></script>
+    
+
+</body>
+</html>
